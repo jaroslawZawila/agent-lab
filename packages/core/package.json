@@ -1,0 +1,36 @@
+{
+  "name": "@agent-lab/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared plumbing for every agent-lab project: config, models, Postgres/pgvector, corpus ingestion, golden set.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "ingest": "tsx --env-file-if-exists=../../.env src/scripts/ingest.ts",
+    "smoke": "tsx --env-file-if-exists=../../.env src/scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@langchain/anthropic": "^1.6.5",
+    "@langchain/core": "^1.4.2",
+    "@langchain/google-genai": "^2.3.6",
+    "@langchain/langgraph": "^1.7.5",
+    "@langchain/openai": "^1.8.4",
+    "@langchain/pgvector": "^0.1.0",
+    "@langchain/textsplitters": "^1.0.2",
+    "langchain": "^1.6.7",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.12"
+  }
+}

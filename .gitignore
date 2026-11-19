@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# Corpus documents stay local (large PDFs). Only the README and the fictional sample are committed.
+corpus/**
+!corpus/README.md
+!corpus/sample/
+!corpus/sample/**
