@@ -28,6 +28,8 @@ docker-compose.yml     postgres (pgvector), redis, neo4j (profile "graph")
 
 ## Roadmap
 
+Full plan, with what each project covers and when it counts as done: [`docs/plan.md`](docs/plan.md).
+
 | # | Project | Week | Status |
 |---|---|---|---|
 | 0 | Setup: monorepo, pgvector, ingestion, tracing, golden set | 0 | ✅ |

@@ -2,6 +2,8 @@
 
 Learning repo: 12 AI-engineering projects (agents & RAG) in TypeScript with LangChain.js v1 and LangGraph.js. The owner is a senior backend engineer (Scala/ZIO background) — explain trade-offs, skip basics.
 
+The plan for all 12 projects (scope, order, done-criteria, progress table) is in `docs/plan.md`; update its table when a project is finished.
+
 ## Conventions
 - pnpm workspace. Shared code in `packages/core`; each project in `packages/pNN-<name>` depending on `@agent-lab/core` (`"workspace:*"`).
 - Packages export `src/*.ts` directly; run with `tsx`, check with `pnpm typecheck`. No build step.
